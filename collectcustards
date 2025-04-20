@@ -1,45 +1,16 @@
-local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
-local c0 = game.Workspace.game.gameCustard.c0
-local c1 = game.Workspace.game.gameCustard.c1
-local c2 = game.Workspace.game.gameCustard.c2
-local c3 = game.Workspace.game.gameCustard.c3
-local c4 = game.Workspace.game.gameCustard.c4
-local c5 = game.Workspace.game.gameCustard.c5
-local c6 = game.Workspace.game.gameCustard.c6
-local c8 = game.Workspace.game.gameCustard.c8
-local c11 = game.Workspace.game.gameCustard.c11
-local c12 = game.Workspace.game.gameCustard.c12
-local c13 = game.Workspace.game.gameCustard.c13
-local c14 = game.Workspace.game.gameCustard.c14
-local c15 = game.Workspace.game.gameCustard.c15
-local c17 = game.Workspace.game.gameCustard.c17
-local c18 = game.Workspace.game.gameCustard.c18
-HRP.CFrame = c0.CFrame
-task.wait(1)
-HRP.CFrame = c1.CFrame
-task.wait(1)
-HRP.CFrame = c2.CFrame
-task.wait(1)
-HRP.CFrame = c3.CFrame
-task.wait(1)
-HRP.CFrame = c4.CFrame
-task.wait(1)
-HRP.CFrame = c5.CFrame
-task.wait(1)
-HRP.CFrame = c6.CFrame
-task.wait(1)
-HRP.CFrame = c8.CFrame
-task.wait(1)
-HRP.CFrame = c11.CFrame
-task.wait(1)
-HRP.CFrame = c12.CFrame
-task.wait(1)
-HRP.CFrame = c13.CFrame
-task.wait(1)
-HRP.CFrame = c14.CFrame
-task.wait(1)
-HRP.CFrame = c15.CFrame
-task.wait(1)
-HRP.CFrame = c17.CFrame
-task.wait(1)
-HRP.CFrame = c18.CFrame
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+local custardFolder = game.Workspace.game.gameCustard
+
+local function Collect()
+    for _, part in ipairs(custardFolder:GetChildren()) do
+        if part:IsA("BasePart") then
+            humanoidRootPart.CFrame = part.CFrame
+            wait(0.6)
+        end
+    end
+end
+
+Collect()
