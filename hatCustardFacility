@@ -1,0 +1,16 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+local Map = game.Workspace.Maps.AttackThrough.CustardFacility
+
+local function CollectCustards()
+    for _, part in ipairs(Map:GetChildren()) do
+        if part:IsA("BasePart") then
+            humanoidRootPart.CFrame = part.CFrame
+            wait(0.6)
+        end
+    end
+end
+
+CollectCustards()
