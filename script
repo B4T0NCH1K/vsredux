@@ -1,4 +1,3 @@
-function CollectCustards()
 local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 local c0 = game.Workspace.game.gameCustard.c0
 local c1 = game.Workspace.game.gameCustard.c1
@@ -15,36 +14,6 @@ local c14 = game.Workspace.game.gameCustard.c14
 local c15 = game.Workspace.game.gameCustard.c15
 local c17 = game.Workspace.game.gameCustard.c17
 local c18 = game.Workspace.game.gameCustard.c18
-HRP.CFrame = c0.CFrame
-task.wait(2)
-HRP.CFrame = c1.CFrame
-task.wait(2)
-HRP.CFrame = c2.CFrame
-task.wait(2)
-HRP.CFrame = c3.CFrame
-task.wait(2)
-HRP.CFrame = c4.CFrame
-task.wait(2)
-HRP.CFrame = c5.CFrame
-task.wait(2)
-HRP.CFrame = c6.CFrame
-task.wait(2)
-HRP.CFrame = c8.CFrame
-task.wait(2)
-HRP.CFrame = c11.CFrame
-task.wait(2)
-HRP.CFrame = c12.CFrame
-task.wait(2)
-HRP.CFrame = c13.CFrame
-task.wait(2)
-HRP.CFrame = c14.CFrame
-task.wait(2)
-HRP.CFrame = c15.CFrame
-task.wait(2)
-HRP.CFrame = c17.CFrame
-task.wait(2)
-HRP.CFrame = c18.CFrame
-end
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
@@ -86,7 +55,35 @@ local Other = Window:CreateTab("Other", 0)
 local Button = Main:CreateButton({
    Name = "Collect Custards (Custard Facility)",
    Callback = function()
-        CollectCustards()
+HRP.CFrame = c0.CFrame
+task.wait(2)
+HRP.CFrame = c1.CFrame
+task.wait(2)
+HRP.CFrame = c2.CFrame
+task.wait(2)
+HRP.CFrame = c3.CFrame
+task.wait(2)
+HRP.CFrame = c4.CFrame
+task.wait(2)
+HRP.CFrame = c5.CFrame
+task.wait(2)
+HRP.CFrame = c6.CFrame
+task.wait(2)
+HRP.CFrame = c8.CFrame
+task.wait(2)
+HRP.CFrame = c11.CFrame
+task.wait(2)
+HRP.CFrame = c12.CFrame
+task.wait(2)
+HRP.CFrame = c13.CFrame
+task.wait(2)
+HRP.CFrame = c14.CFrame
+task.wait(2)
+HRP.CFrame = c15.CFrame
+task.wait(2)
+HRP.CFrame = c17.CFrame
+task.wait(2)
+HRP.CFrame = c18.CFrame
    end,
 })
 
