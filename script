@@ -10,9 +10,9 @@ local Window = Rayfield:CreateWindow({
    DisableBuildWarnings = false,
 
    ConfigurationSaving = {
-      Enabled = false,
-      FolderName = nil,
-      FileName = ""
+      Enabled = true,
+      FolderName = VSRedux,
+      FileName = "vsreduxconf"
    },
 
    Discord = {
@@ -35,16 +35,19 @@ local Window = Rayfield:CreateWindow({
 local Main = Window:CreateTab("Main", 0)
 local Other = Window:CreateTab("Other", 0)
 
-local Button = Main:CreateButton({
-   Name = "Collect Custards (Any Map)",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/collectcustards"))()
-   end,
-})
-
 local Button = Other:CreateButton({
    Name = "Destroy",
    Callback = function()
         Rayfield:Destroy()
+   end,
+})
+
+local Keybind = Main:CreateKeybind({
+   Name = "Collect Custards (Any Map)",
+   CurrentKeybind = "Q",
+   HoldToInteract = false,
+   Flag = "collectcustards",
+   Callback = function(Keybind)
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/collectcustards"))()
    end,
 })
