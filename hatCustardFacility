@@ -4,7 +4,7 @@ local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 local src = game.Workspace.Maps.AttackThrough
 local Map = src.CustardFacility
 
-local function CollectCustards()
+local function CollectHats()
     for _, part in ipairs(Map:GetChildren()) do
         if part:IsA("BasePart") then
             humanoidRootPart.CFrame = part.CFrame
@@ -13,4 +13,4 @@ local function CollectCustards()
     end
 end
 
-CollectCustards()
+CollectHats()
