@@ -1,0 +1,98 @@
+function CollectCustards()
+local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+local c0 = game.Workspace.game.gameCustard.c0
+local c1 = game.Workspace.game.gameCustard.c1
+local c2 = game.Workspace.game.gameCustard.c2
+local c3 = game.Workspace.game.gameCustard.c3
+local c4 = game.Workspace.game.gameCustard.c4
+local c5 = game.Workspace.game.gameCustard.c5
+local c6 = game.Workspace.game.gameCustard.c6
+local c8 = game.Workspace.game.gameCustard.c8
+local c11 = game.Workspace.game.gameCustard.c11
+local c12 = game.Workspace.game.gameCustard.c12
+local c13 = game.Workspace.game.gameCustard.c13
+local c14 = game.Workspace.game.gameCustard.c14
+local c15 = game.Workspace.game.gameCustard.c15
+local c17 = game.Workspace.game.gameCustard.c17
+local c18 = game.Workspace.game.gameCustard.c18
+HRP.CFrame = c0.CFrame
+task.wait(2)
+HRP.CFrame = c1.CFrame
+task.wait(2)
+HRP.CFrame = c2.CFrame
+task.wait(2)
+HRP.CFrame = c3.CFrame
+task.wait(2)
+HRP.CFrame = c4.CFrame
+task.wait(2)
+HRP.CFrame = c5.CFrame
+task.wait(2)
+HRP.CFrame = c6.CFrame
+task.wait(2)
+HRP.CFrame = c8.CFrame
+task.wait(2)
+HRP.CFrame = c11.CFrame
+task.wait(2)
+HRP.CFrame = c12.CFrame
+task.wait(2)
+HRP.CFrame = c13.CFrame
+task.wait(2)
+HRP.CFrame = c14.CFrame
+task.wait(2)
+HRP.CFrame = c15.CFrame
+task.wait(2)
+HRP.CFrame = c17.CFrame
+task.wait(2)
+HRP.CFrame = c18.CFrame
+end
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Slendytubbies VS Redux",
+   Icon = 0,
+   LoadingTitle = "Loading",
+   LoadingSubtitle = "",
+   Theme = "Default",
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil,
+      FileName = ""
+   },
+
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+
+   KeySystem = false,
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {""}
+   }
+})
+local Main = Window:CreateTab("Main", 0)
+local Other = Window:CreateTab("Other", 0)
+
+local Button = Main:CreateButton({
+   Name = "Collect Custards (Custard Facility)",
+   Callback = function()
+        CollectCustards()
+   end,
+})
+
+local Button = Other:CreateButton({
+   Name = "Destroy",
+   Callback = function()
+        Rayfield:Destroy()
+   end,
+})
