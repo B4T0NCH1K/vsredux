@@ -2,8 +2,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Slendytubbies VS Redux",
    Icon = 0,
-   LoadingTitle = "Loading",
-   LoadingSubtitle = "",
+   LoadingTitle = "Loading...",
+   LoadingSubtitle = "Please Wait",
    Theme = "Default",
 
    DisableRayfieldPrompts = false,
@@ -49,5 +49,61 @@ local Keybind = Main:CreateKeybind({
    Flag = "collectcustards",
    Callback = function(Keybind)
       loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/collectcustards"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Custard Facility)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hatCustardFacility"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Haunted Mansion)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hathauntedmansion"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Mountains)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hatmountains"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (OutSkirts)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hatoutskirts"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Crossroads)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hatscrossroads"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Secret Lair)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hatsecretlair"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Teletubby Land)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hatteletubbyland"))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "Collect Hats (Training Maze)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/vsredux/refs/heads/main/hattrainingmaze"))()
    end,
 })
