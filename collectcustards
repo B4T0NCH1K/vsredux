@@ -4,7 +4,7 @@ local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
 local custardFolder = game.Workspace.game.gameCustard
 
-local function Collect()
+local function CollectCustards()
     for _, part in ipairs(custardFolder:GetChildren()) do
         if part:IsA("BasePart") then
             humanoidRootPart.CFrame = part.CFrame
@@ -13,4 +13,4 @@ local function Collect()
     end
 end
 
-Collect()
+CollectCustards()
