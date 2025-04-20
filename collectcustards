@@ -7,8 +7,8 @@ local custardFolder = game.Workspace.game.gameCustard
 local function CollectCustards()
     for _, part in ipairs(custardFolder:GetChildren()) do
         if part:IsA("BasePart") then
-            humanoidRootPart.CFrame = part.CFrame
-            wait(0.6)
+            part.CFrame = humanoidRootPart.CFrame
+            wait(0.35)
         end
     end
 end
