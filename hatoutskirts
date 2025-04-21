@@ -7,8 +7,8 @@ local Map = src.OutSkirts
 local function CollectHats()
     for _, part in ipairs(Map:GetChildren()) do
         if part:IsA("BasePart") then
-            humanoidRootPart.CFrame = part.CFrame
-            wait(0.6)
+            part.CFrame = humanoidRootPart.CFrame
+            wait(0.35)
         end
     end
 end
